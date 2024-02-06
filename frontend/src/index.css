@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  section {
+    @apply py-[75px];
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-full w-[1440px] px-5 mx-auto;
+  }
+  .btn {
+    @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px];
+  }
+  .heading {
+    @apply text-[44px]  leading-[54px] text-headingColor font-[700];
+  }
+  .text_pera {
+    @apply text-[18x]  leading-[30px] text-textColor font-[400];
+  }
+  .header {
+    @apply bg-[url("./assets/images/mask.png")] bg-no-repeat bg-center bg-cover w-full h-[100px] leading-[100px];
+  }
+  .hero_section {
+    @apply bg-[url("./assets/images/hero-bg.png")] bg-no-repeat bg-center bg-cover;
+  }
+  .form_label {
+    @apply text-textColor font-semibold text-[16px] mb-2 leading-7;
+  }
+  .form_input {
+    @apply w-full px-4 py-3 border border-solid border-[#0066ff61] rounded-md focus:outline-none focus:border-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer;
+  }
+}
+
+@media only screen and (max-width: 1024) {
+  .container {
+    @apply w-full;
+  }
+  section {
+    @apply py-[35px];
+  }
+}
+
+@media only screen and (max-width: 768) {
+  .heading {
+    @apply text-[26px]  leading-[36px];
+  }
+  .text_pera {
+    @apply text-[16px]  leading-7 mt-3;
+  }
+}
